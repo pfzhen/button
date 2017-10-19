@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            margin: 50px auto;
+        }
+
+        input {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        button {
+            width: 80px;
+            height: 40px;
+            background-color: aqua;;
+            border-radius: 10px;;
+            margin: 30px auto;
+            line-height: 40px;
+            text-align: center;
+            display: block;
+            font-weight: bold;;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <input type="text" id="inp">
+    <button id="but">提交</button>
+</div>
+
+<script>
+    var But = document.getElementById("but")
+    var Inp = document.getElementById("inp")
+
+But.onclick= function () {
+    if(Inp.value.length>60){
+      But.style.backgroundColor="#424241";
+        But.style.color="#FFF0CB";
+
+
+    }else{
+        alert(Inp.value)
+    }
+
+
+
+
+
+
+}
+
+
+
+
+</script>
+
+</body>
+</html>
